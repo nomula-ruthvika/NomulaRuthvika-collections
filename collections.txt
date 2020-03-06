@@ -1,0 +1,33 @@
+import java.util.LinkedList;
+public class LinkedListEx
+{
+public static void main(String args[])
+{
+LinkedList l=new LinkedList();
+l.add("List");
+l.add("ArrayList");
+l.add("LinkedList");
+l.add("Vector");
+l.add("Stack");
+l.add("Set");
+l.add("HashSet");
+l.add("LinkedhashSet");
+l.add("TreeSet");
+Iterator<String> it=l.iterator();
+while(it.hasNext())
+{
+System.out.println(it.next());
+}
+System.out.println(l);
+l.addFirst("collection");
+System.out.println("after adding an element to list:");
+System.out.println(l);
+l.removeLast();
+l.remove(2);
+System.out.println("After removing elements from the list is:");
+System.out.println(l);
+}
+}
+
+
+
